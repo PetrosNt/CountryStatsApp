@@ -1,0 +1,11 @@
+<div class="container">
+  <div>
+<h2>Languages Spoken In {{country?.name}}</h2>
+<ul>
+  <!-- Loop through the items array and display each item -->
+  <li *ngFor="let language of languages">
+    {{ language?.language }} <!-- Adjust the property according to your data structure -->
+  </li>
+</ul>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<h2>Country Stats</h2>
+<form (ngSubmit)="fetchData()">
+  <div class="filter-container">
+  <div class="filter-element">
+    <label for="filter1">Region:</label>
+    <select id="filter1" [(ngModel)]="region" name="region">
+      <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
+    </select>
+  </div>
+  <div class="filter-element">
+    <label for="filter2">Year From:</label>
+    <input id="filter2" type="number" [(ngModel)]="yearFrom" name="yearFrom" />
+  </div>
+  <div class="filter-element">
+    <label for="filter3">Year To:</label>
+    <input id="filter3" type="number" [(ngModel)]="yearTo" name="yearTo" />
+  </div>
+
+  <button type="submit">Search</button>
+  </div>
+</form>
+
+<table>
+  <thead>
+  <tr>
+    <th>Continent</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Year</th>
+    <th>Population</th>
+    <th>GDP</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of data">
+    <td>{{ item.continentName }}</td>
+    <td>{{ item.regionName }}</td>
+    <td>{{ item.countryName }}</td>
+    <td>{{ item.year }}</td>
+    <td>{{ item.population }}</td>
+    <td>{{ item.gdp }}</td>
+  </tr>
+  </tbody>
+</table>

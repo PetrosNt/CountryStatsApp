@@ -1,0 +1,23 @@
+<h2>Year of maximum  GDP/Poopulation per Country</h2>
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Country</th>
+    <th>Country Code (3)</th>
+    <th>Year</th>
+    <th>Population</th>
+    <th>GDP</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of data">
+    <td>{{ item.country.name }}</td>
+    <td>{{ item.country.countryCode3 }}</td>
+    <td>{{ item.year }}</td>
+    <td>{{ item.population }}</td>
+    <td>{{ item.gdp }}</td>
+  </tr>
+  </tbody>
+</table>
