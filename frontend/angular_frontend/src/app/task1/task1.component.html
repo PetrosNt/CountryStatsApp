@@ -1,0 +1,19 @@
+<h2>Some Country Stats</h2>
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Country</th>
+    <th>Area</th>
+    <th>Country Code (2)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let country of data" (click)="onRowClick(country)">
+    <td>{{ country.name }}</td>
+    <td>{{ country.area }}</td>
+    <td>{{ country.countryCode2 }}</td>
+  </tr>
+  </tbody>
+</table>

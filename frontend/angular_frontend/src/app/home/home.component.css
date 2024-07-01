@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text horizontally */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px; /* Space between title and content */
+}
+
+nav {
+  margin-top: 20px; /* Space above the navigation */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin: 10px 0; /* Space between list items */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Bootstrap primary color */
+  font-size: 1.2em;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
